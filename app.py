@@ -38,14 +38,25 @@ st.subheader(" 🗒️ User Input")
 st.dataframe(Input)
 
 if st.button(" 🔮 Predict Loan Status 🕹️") :
-    Pred = model.predict(Input)
-    st.subheader(" 🎯 Result ")
+    
+    if Input.isnull().any().any():
 
-    if Pred[0]=="Approved":
-        st.success(" 🟩 ✅ Loan Approved")
-    elif Pred[0]=="Rejected":
-        st.error(" 🟥 ❌ Loan Rejected")
+        st.warning("⚠️ Please Enter All Required Information")
 
+    else:
+
+        Pred = model.predict(Input)
+
+        st.subheader("🎯 Result")
+
+        if Pred[0] == "Approved":
+
+            st.success("🟩 ✅ Loan Approved")
+
+        elif Pred[0] == "Rejected":
+
+            st.error("🟥 ❌ Loan Rejected")
+    
 st.markdown("""<div style ="text-align: right; 
 font-family: Constantia; 
 font-style: italic; 
