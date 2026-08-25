@@ -28,19 +28,18 @@ Contains the trained Machine Learning model and preprocessing pipeline used for 
 
 Contains the Python libraries and dependencies required to run the web application.
 
-### `runtime.txt`
-
-Specifies the Python version required for the web application.
-
 ## 🌐 Web Application
 
-The project is deployed as a **Streamlit web application**, where users can enter the required loan-related information and receive a loan risk prediction.
+The project is deployed on  **Streamlit Platform**, where users can enter the required loan-related information and receive a loan risk prediction.
+
+## Live Demo 
+
+https://loan-risk-prediction-ml-project.streamlit.app/
 
 ## 🛠️ Technologies Used
 
 * Python
 * Pandas
-* NumPy
 * Scikit-learn
 * Matplotlib
 * Seaborn
