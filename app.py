@@ -3,13 +3,13 @@ import joblib
 import pandas as pd
 
 model = joblib.load('loan_risk_prediction_model.pkl')
-feature = joblib.load('features.pkl')
+feature = joblib.load('Feature.pkl')
 
 st.set_page_config(page_title='Loan Risk Prediction',layout='centered',initial_sidebar_state='expanded')
 st.title("🏦 Loan Risk Prediction 💰")
 st.write(' 📝 Enter The Candidate Information Below ⤵️')
 
-numeric_col = ['Income','LoanAmount','CreditScore','YearsExperience']
+numeric_col = ['Age','Income','LoanAmount','CreditScore','YearsExperience']
 
 selectbox_col = {
     'Education':['High School','Bachelors','Masters','PhD'],
