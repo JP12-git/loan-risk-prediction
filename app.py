@@ -11,7 +11,7 @@ st.set_page_config(page_title='Loan Risk Prediction',layout='centered',initial_s
 st.title("🏦 Loan Risk Prediction 💰")
 st.write(' 📝 Enter The Candidate Information Below ⤵️')
 
-numeric_col = ['Age','Income','LoanAmount','CreditScore','YearsExperience']
+numeric_col = ['Age','Income','LoanAmount','CreditScore']
 
 selectbox_col = {
     'Education':['High School','Bachelors','Masters','PhD'],
